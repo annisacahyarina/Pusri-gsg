@@ -20,7 +20,7 @@
     }
 </style>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
     <div class="container-fluid" style="margin: 8px">
         <a class="navbar-brand" href="#">
             <img class="img-nav" src="asset/logo.png" alt="logo"  style="height: 50px">
@@ -32,31 +32,26 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav" style="font-size: 12pt; font-family:; margin-left:10px">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="landingpage">Beranda</a>
+                    <a class="nav-link" aria-current="page" href="landingpage" style="color: white">Beranda</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="color: white">
                         Layanan
                     </a>
-                    <ul class="dropdown-menu" style="font-size: 10pt; margin-right:10px">
+                    <ul class="dropdown-menu" style="font-size: 10pt; margin-right:10px" style="color: white">
                         <li><a class="dropdown-item" href="layanangedung">Paket Gedung</a></li>
                         <li><a class="dropdown-item" href="layananwo">Paket WO</a></li>
                     </ul>
                 </li>
                 <li class="nav-item" style="margin-right:10px">
-                    <a class="nav-link" href="faq">F.A.Q</a>
+                    <a class="nav-link" href="faq" style="color: white">F.A.Q</a>
                 </li>
+                {{-- <li class="nav-item" style="margin-right:10px">
+                    <a class="nav-link" href="testimoni" style="color: white">Testimoni</a>
+                </li> --}}
                 <li class="nav-item" style="margin-right:10px">
-                    <a class="nav-link" href="#">Testimoni</a>
-                </li>
-                <li class="nav-item" style="margin-right:10px">
-                    <a class="nav-link" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item" style="margin-right:10px">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </a>
+                    <a class="nav-link" href="login" style="color: white">Dashboard</a>
                 </li>
                 </a>
             </ul>

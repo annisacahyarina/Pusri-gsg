@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>layanan gedung</title>
 
-
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -31,6 +29,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 2vw;
         margin-top: 6vw;
+        background-image: url("asset/background.jpg");
     }
 
     .gambar1 {
@@ -239,7 +238,7 @@
                         <h5 class="card-title">Eksternal</h5>
                         <p class="card-text">Rp 50.000.000</p>
                         <p>harga belum termasuk PPN/event</p>
-                        <a href="#" class="btn btn-dark" style="margin-top: 2.2vw">Pesan Sekarang</a>
+                        <a href="/form?booking_type=Booking%20Gedung%20Eksternal&price=Rp%2050.000.000" class="btn btn-dark" style="margin-top: 2.2vw">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -250,7 +249,7 @@
                         <p class="card-text">Rp 42.500.000</p>
                         <p>Karyawan/karyawan non organik, anak karyawan/anak pensiunan (1KK). Harga belum termasuk
                             PPN/event</p>
-                        <a href="#" class="btn btn-dark">Pesan Sekarang</a>
+                        <a href="/form?booking_type=Booking%20Gedung%20Keluarga%20Pusri&price=Rp%2042.500.000" class="btn btn-dark">Pesan Sekarang</a>
                     </div>
                 </div>
             </div>
@@ -275,6 +274,7 @@
             <img src="asset/galeri7.png" alt="Foto 6">
             <img src="asset/gedungluas.jpg" alt="Foto 7">
             <img src="asset/ruangfull.png" alt="Foto 8">
+            <img src="asset/parkir.jpg" alt="Foto 9">
         </div>
         <script>
             // Efek fade in saat scroll

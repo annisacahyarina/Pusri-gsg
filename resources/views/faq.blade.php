@@ -147,18 +147,18 @@
         <!-- FAQ Items -->
         <div class="faq-item">
             <div class="faq-question">
-                <span>Bagaimana alur pemesanan di web ini?</span>
+                <span>BAGAIMANA ALUR PEMESANAN DI WEB INI?</span>
                 <span class="faq-icon">▼</span>
             </div>
             <div class="faq-answer">
                 Pengguna dapat memesan gedung maupun WO yang diinginkan. Lalu, pengguna diharapkan untuk mengisi form
                 terkait data diri dan pemesanan agar dapat diproses oleh admin. Jika telah di approve oleh admin, maka
-                pengguna akan menerima pesan dari admin untuk detail penyewaan dan acara.
+                pengguna akan segera dihubungi untuk detail penyewaan dan acara.
             </div>
         </div>
         <div class="faq-item">
             <div class="faq-question">
-                <span>Bagaimana sistem pembayarannya?</span>
+                <span>BAGAIMANA SISTEM PEMBAYARANNYA?</span>
                 <span class="faq-icon">▼</span>
             </div>
             <div class="faq-answer">Pembayaran penyewaan gedung maupun WO sesuai dengan kesepakatan dengan pihak terkait (diluar website ini).
@@ -166,43 +166,27 @@
         </div>
         <div class="faq-item">
             <div class="faq-question">
-                <span>CAN I REQUEST PEOPLE WORKING?</span>
+                <span>APAKAH TAMU UNDANGAN PERLU MENINGGALKAN KTP SAAT MASUK KE AREA PUSRI?</span>
                 <span class="faq-icon">▼</span>
             </div>
-            <div class="faq-answer">Yes, you can request specific staff for your project by contacting us directly.
+            <div class="faq-answer">Tamu undangan hanya perlu membawa undangan dan ditunjukkan ke petugas keamanan yang sedang berjaga.
             </div>
         </div>
         <div class="faq-item">
             <div class="faq-question">
-                <span>HOW LONG DAY NEEDED?</span>
+                <span>APAKAH DIPERBOLEHKAN JIKA MENGGUNAKAN LAYANAN WO SELAIN DARI MITRA PUSRI? </span>
                 <span class="faq-icon">▼</span>
             </div>
-            <div class="faq-answer">The project usually takes around 3-5 days, depending on the complexity of the task.
+            <div class="faq-answer">Tentu saja diperbolehkan.
             </div>
         </div>
         <div class="faq-item">
             <div class="faq-question">
-                <span>HOW TO CLAIM INSURANCE?</span>
+                <span>KEMANA SAYA HARUS MENGHUBUNGI JIKA INGIN BERTANYA LEBIH LANJUT</span>
                 <span class="faq-icon">▼</span>
             </div>
-            <div class="faq-answer">You can claim insurance by providing the required documents to our customer service.
+            <div class="faq-answer">Silakan menghubungi kontak kami. WA: +62821-7656-1646 atau IG: @pusrigrandballroom
             </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">
-                <span>CAN I REQUEST PEOPLE WORKING?</span>
-                <span class="faq-icon">▼</span>
-            </div>
-            <div class="faq-answer">Yes, you can request specific staff for your project by contacting us directly.
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">
-                <span>HOW TO TRACK MY ORDER?</span>
-                <span class="faq-icon">▼</span>
-            </div>
-            <div class="faq-answer">You can track your order status using the tracking number provided after your
-                purchase.</div>
         </div>
     </div>
 

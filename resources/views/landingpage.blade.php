@@ -22,14 +22,10 @@
     rel="stylesheet">
 
 <style>
-    /* * {
-        outline: 1px solid red;
-        /* Ini hanya untuk melihat elemen mana yang melebar
-    } */
-
     .body {
         font-family: 'Montserrat', sans-serif;
         font-size: 2vw;
+
     }
 
     .description,
@@ -119,25 +115,43 @@
     .mapouter {
         position: relative;
         text-align: right;
-        width: 100vw;
-        height: 40vw;
+        padding: 2vw;
+        height: 100%;
     }
 
     .gmap_canvas {
         overflow: hidden;
         background: none !important;
-        width: 50vw;
-        height: 40vw;
+        width: 400px;
+        height: 300px;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .gmap_iframe {
-        height: 40vw !important;
+    .container-lokasi {
+        position: relative;
+        padding-bottom: 1vw;
     }
 
-    .container-lokasi {
-        background-color: #d4d2d2;
-        padding-bottom: 2vw;
+    /* Pseudo-element untuk background dengan opacity */
+    .container-lokasi::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('asset/marble.jpg');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.3;
+        /* Atur opacity di sini */
+        z-index: 0;
+    }
+
+    /* Konten di atas background */
+    .container-lokasi>* {
+        position: relative;
+        z-index: 1;
     }
 
     /* Efek Fade In */
@@ -161,6 +175,18 @@
         .description,
         .description-2 {
             text-align: justify;
+        }
+
+        .gmap_canvas {
+            padding-bottom: 30vw
+        }
+
+        .canvas,
+        .container,
+        iframe,
+        .gmap_canvas {
+            width: 80vw;
+            max-width: 80vw;
         }
     }
 </style>
@@ -193,7 +219,7 @@
             <div class="caption">Kapasitas 1200 tamu</div>
         </div>
         <div class="image-card">
-            <img src="asset/gedungdepan.png" alt="parkir">
+            <img src="asset/parkir.jpg" alt="parkir">
             <div class="caption">Parkir yang luas</div>
         </div>
         <div class="image-card">
@@ -203,55 +229,64 @@
     </div>
 
     <div class="container-btn">
-        <button class="btn-selengkapnya" type="button">Selengkapnya</button>
+        <a href="layanangedung" class="btn-selengkapnya" type="button">Selengkapnya</a>
     </div>
 
-    <br>
-    <!-- Lokasi -->
-    <div class="container-lokasi">
-        <div class="description">
-            <h2 class="h2">LOKASI</h2>
-        </div>
-        <div class="container">
-            <p
-                style="text-align:justify; margin-right: 2vw; transform: translateY(4vw);
-        transition: opacity 1s ease-out, transform 1s ease-out;">
-                Pusri Grand Ballroom merupakan pilihan yang tepat bagi kamu yang ingin mengadakan acara
-                pernikahan di kawasan Kalidoni, Pusri, dan sekitarnya. Dengan fasilitas yang memadai dan lokasi yang
-                strategis, gedung ini menawarkan kenyamanan bagi para tamu undangan. Suasana yang mendukung dan desain
-                ruangan yang fleksibel menjadikan Gedung Serbaguna Pusri sebagai venue yang ideal untuk acara
-                pernikahan, baik itu dengan skala besar maupun intim.</p>
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe class="gmap_iframe" width="100%" height="100%" frameborder="0" scrolling="no"
-                        marginheight="40vw" marginwidth="40vw"
-                        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=gedung serbaguna pusri&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    <!-- Deskripsi Singkat 2 -->
+    <div class="container-lokasi" style="padding: 20px;">
+        <div class="description-2" style="margin-top: 4vw">
+            <div class="container" style="display: flex; align-items: flex-start; gap: 2vw;">
+                <!-- Bagian Kalender -->
+                <div class="canvas" style="box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=melsaayp%40gmail.com&ctz=Asia%2FJakarta"
+                        style="border: 0; width: 500px; height: 400px;" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+                <!-- Bagian Deskripsi -->
+                <div style="flex-grow: 1;">
+                    <h2 class="h2" style="font-size: 2.2em; font-weight: bold;">RENCANAKAN ACARA ANDA</h2>
+                    <p style="text-align: justify; line-height: 1.6; font-size: 1.1em; color: #333;">
+                        Lihat jadwal gedung untuk memesan tanggal
+                        terbaik—pastikan jadwal masih tersedia dan biarkan kami membantu mewujudkan momen pernikahan
+                        yang tak terlupakan. Dengan fasilitas lengkap dan ruang elegan yang mampu menampung hingga 1.200 tamu, setiap detail
+                        acara akan kami tangani dengan profesional.
+                    </p>
+                    <p style="font-size: 10pt">*Tanggal berwarna biru = Gedung sudah dibooking</p>
+                    <a type="button" href="layanangedung" class="btn btn-dark"
+                        style="margin-top: 15px; padding: 10px 20px; font-size: 1.1em; border-radius: 5px;">
+                        Booking sekarang
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
+
+
     <br>
-    <!-- Deskripsi Singkat 2 -->
-    <div class="description-2" style="margin-top: 4vw">
-        <div class="container" style="display: flex; align-items: flex-start;">
-            <img src="asset/beranda.png" alt="beranda" style="width:40vw;">
-            <div style="margin-left: 2vw;">
-                <h2 class="h2">RENCANAKAN ACARA ANDA</h2>
-                <p style="text-align:justify;">Ballroom yang dirancang untuk acara pernikahan, kami menyediakan layanan
-                    wedding
-                    organizer profesional yang bekerja sama dengan kami. Mulai dari dekorasi, tata cahaya, hingga
-                    pengaturan
-                    tamu, semua disesuaikan untuk
-                    menciptakan momen pernikahan yang sempurna. Dengan fasilitas lengkap dan ruang elegan yang mampu
-                    menampung
-                    hingga 1.200 tamu, kami memastikan setiap detail pernikahan Anda berjalan lancar dan meninggalkan
-                    kesan
-                    mendalam bagi Anda serta para tamu.</p>
-                <button type="button" class="btn btn-dark" style="margin-top: 10px">Cek wedding organizer</button>
-            </div>
+    <!-- Lokasi -->
+
+    <div class="description">
+        <h2 class="h2">LOKASI</h2>
+    </div>
+    <div class="container">
+        <p
+            style="text-align:justify; margin-right: 2vw; transform: translateY(4vw);
+        transition: opacity 1s ease-out, transform 1s ease-out;">
+            Pusri Grand Ballroom merupakan pilihan yang tepat bagi kamu yang ingin mengadakan acara
+            pernikahan di kawasan Kalidoni, Pusri, dan sekitarnya. Dengan fasilitas yang memadai dan lokasi yang
+            strategis, gedung ini menawarkan kenyamanan bagi para tamu undangan. Suasana yang mendukung dan desain
+            ruangan yang fleksibel menjadikan Gedung Serbaguna Pusri sebagai venue yang ideal untuk acara
+            pernikahan, baik itu dengan skala besar maupun intim.</p>
+        <div class="mapouter">
+            <iframe class="gmap_iframe" width="450" height="300" frameborder="0" scrolling="no"
+                src="https://maps.google.com/maps?width=150&amp;height=200&amp;hl=en&amp;q=gedung serbaguna pusri&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
     </div>
+
+
+    <br>
+
 
     <br>
     <!-- Footer -->
@@ -272,6 +307,17 @@
 
         window.addEventListener('scroll', fadeInOnScroll);
     </script>
+    @if (session('success'))
+        <script>
+            alert("{{ session('success') }}");
+        </script>
+    @endif
+
+    @if (session('error'))
+        <script>
+            alert("{{ session('error') }}");
+        </script>
+    @endif
 
 </body>
 

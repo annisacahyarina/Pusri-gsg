@@ -61,7 +61,7 @@
                 <div class="row">
                     <!-- Column 2 -->
                     <div class="justify-content-start">
-                        <h5 class="text-uppercase">Kontak Kami</h5>
+                        <h5 class="text-uppercase">OUR CONTACT</h5>
                         <!-- Alamat -->
                         <p class="p-footer"><i class="fas fa-building" style="margin-right: 10px;"></i>
                            Jl. Komp. Pusri, Sei Selayur, Kec. Kalidoni, Kota Palembang, Sumatera Selatan 30119, Indonesia</p>
