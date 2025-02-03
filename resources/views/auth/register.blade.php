@@ -67,7 +67,7 @@
             margin-top: 1vw;
         }
 
-        p{
+        p {
             font-size: 10pt;
             color: grey;
         }
@@ -78,6 +78,7 @@
     <div class="register-container">
         <div class="container d-flex justify-content-center align-items-center vh-100">
             <div class="row w-100">
+                {{-- ALERT --}}
                 <div class="col-md-6 offset-md-3">
                     @if (session()->has('success'))
                         <div class="alert alert-success">
@@ -89,6 +90,7 @@
                             {{ session()->get('error') }}
                         </div>
                     @endif
+                    {{-- FORM --}}
                     <div class="register-form bg-light p-4 rounded">
                         <h2 class="text-center mb-4">REGISTER</h2>
                         <form action="{{ route('register.post') }}" method="POST">

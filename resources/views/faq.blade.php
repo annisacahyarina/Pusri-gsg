@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ Section</title>
 
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<!-- CDN Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- CDN Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
@@ -100,30 +101,36 @@
         .faq-item.active .faq-icon {
             transform: rotate(180deg);
         }
-        @media (max-width: 768px) {
-        body {
-            margin-top: 8px; /* Tambahkan ruang lebih untuk navbar di ukuran layar kecil */
-        }
-        .faq-header h1 {
-            font-size: 5vw;
-            margin: 0;
-            font-weight: bold;
-        }
 
-        .faq-header p {
-            color: #777;
-            font-size: 3.2vw;
+        @media (max-width: 768px) {
+            body {
+                margin-top: 8px;
+                /* Tambahkan ruang lebih untuk navbar di ukuran layar kecil */
+            }
+
+            .faq-header h1 {
+                font-size: 5vw;
+                margin: 0;
+                font-weight: bold;
+            }
+
+            .faq-header p {
+                color: #777;
+                font-size: 3.2vw;
+            }
+
+            .faq-section {
+                margin: 5vw;
+            }
+
+            span {
+                font-size: 3.2vw
+            }
+
+            .faq-answer {
+                font-size: 3vw
+            }
         }
-        .faq-section{
-            margin: 5vw;
-        }
-        span{
-            font-size: 3.2vw
-        }
-        .faq-answer{
-            font-size: 3vw
-        }
-    }
     </style>
 </head>
 
@@ -133,7 +140,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
-{{-- navbar --}}
+    {{-- navbar --}}
     @extends('komponen.navbar')
 
     {{-- section pertanyaan --}}
@@ -144,6 +151,7 @@
             <h1 style="text-align: start">QUESTION ANSWER</h1>
             <p style="text-align:start">Temukan jawaban atas pertanyaan yang sering diajukan mengenai layanan kami.</p>
         </div>
+
         <!-- FAQ Items -->
         <div class="faq-item">
             <div class="faq-question">
@@ -151,9 +159,9 @@
                 <span class="faq-icon">▼</span>
             </div>
             <div class="faq-answer">
-                Pengguna dapat memesan gedung maupun WO yang diinginkan. Lalu, pengguna diharapkan untuk mengisi form
+                Penyewa dapat memesan gedung maupun WO yang diinginkan. Lalu, penyewa diharapkan untuk mengisi form
                 terkait data diri dan pemesanan agar dapat diproses oleh admin. Jika telah di approve oleh admin, maka
-                pengguna akan segera dihubungi untuk detail penyewaan dan acara.
+                penyewa akan segera dihubungi untuk detail penyewaan dan acara.
             </div>
         </div>
         <div class="faq-item">
@@ -161,15 +169,17 @@
                 <span>BAGAIMANA SISTEM PEMBAYARANNYA?</span>
                 <span class="faq-icon">▼</span>
             </div>
-            <div class="faq-answer">Pembayaran penyewaan gedung maupun WO sesuai dengan kesepakatan dengan pihak terkait (diluar website ini).
+            <div class="faq-answer">Pembayaran penyewaan gedung maupun WO sesuai dengan kesepakatan dengan pihak terkait
+                (diluar website ini). Penyewa dapat mengirimkan bukti pembayaran pada form.
             </div>
         </div>
         <div class="faq-item">
             <div class="faq-question">
-                <span>APAKAH TAMU UNDANGAN PERLU MENINGGALKAN KTP SAAT MASUK KE AREA PUSRI?</span>
+                <span>BAGAIMANA TAMU UNDANGAN DAPAT MASUK KE PUSRI GRAND BALLROOM SAAT ACARA?</span>
                 <span class="faq-icon">▼</span>
             </div>
-            <div class="faq-answer">Tamu undangan hanya perlu membawa undangan dan ditunjukkan ke petugas keamanan yang sedang berjaga.
+            <div class="faq-answer">Tamu undangan hanya perlu membawa undangan dan ditunjukkan ke petugas keamanan yang
+                sedang berjaga. Jika tidak ada undangan, maka bisa membawa KTP/kartu identitas lainnya untuk ditunjukkan ke petugas keamanan.
             </div>
         </div>
         <div class="faq-item">
@@ -177,7 +187,8 @@
                 <span>APAKAH DIPERBOLEHKAN JIKA MENGGUNAKAN LAYANAN WO SELAIN DARI MITRA PUSRI? </span>
                 <span class="faq-icon">▼</span>
             </div>
-            <div class="faq-answer">Tentu saja diperbolehkan.
+            <div class="faq-answer">Tidak boleh. Penyewa hanya dapat menggunakan layanan yang disediakan pihak Pusri
+                Grand Ballroom.
             </div>
         </div>
         <div class="faq-item">
@@ -202,6 +213,8 @@
             });
         });
     </script>
+
+    {{-- Footer --}}
 
     @extends('komponen.footer')
 </body>

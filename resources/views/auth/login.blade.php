@@ -12,66 +12,67 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-<!-- CDN Font Awesome -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- CDN Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-{{-- style --}}
+    {{-- style --}}
 
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body,
-    html {
-        height: 100%;
-    }
+        body,
+        html {
+            height: 100%;
+        }
 
-    .login-container {
-        background-image: url('asset/background.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-    }
+        .login-container {
+            background-image: url('asset/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
 
-    .login-form {
-        opacity: 0.9;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+        .login-form {
+            opacity: 0.9;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-    h2 {
-        font-size: 1.8rem;
-        font-weight: bold;
-    }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
 
-    .form-group {
-        padding: 0.4vw
-    }
+        .form-group {
+            padding: 0.4vw
+        }
 
-    label {
-        margin-bottom: 0.5vw;
-    }
+        label {
+            margin-bottom: 0.5vw;
+        }
 
-    button {
-        margin-top: 1vw;
-    }
-</style>
+        button {
+            margin-top: 1vw;
+        }
+    </style>
 </head>
 
 <body>
     <div class="login-container">
         <div class="container d-flex justify-content-center align-items-center vh-100">
+            {{-- ALERT --}}
             <div class="row w-100">
                 <div class="col-md-6 offset-md-3">
                     @if (session()->has('success'))
@@ -84,9 +85,10 @@
                             {{ session()->get('error') }}
                         </div>
                     @endif
+                    {{-- FORM --}}
                     <div class="login-form bg-light p-4 rounded">
                         <h2 class="text-center mb-4">LOGIN</h2>
-                        <form action="{{route("login.post")}}" method="POST">
+                        <form action="{{ route('login.post') }}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label for="email">Email</label>
@@ -108,7 +110,6 @@
                             <div class="d-flex justify-content-end">
                                 <button type="submit" class="btn btn-dark">Login</button>
                             </div>
-
                         </form>
                     </div>
                 </div>

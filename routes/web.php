@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\authController;
-
+use App\Http\Controllers\ExportController;
 
 Route::get('/', function () {
     return view('landingpage');
@@ -66,4 +66,9 @@ Route::post('/logout', function () {
 })->name('logout');
 
 
+//download csv
+Route::get('generateCsv',[BookingController::class, 'generateCsv'])->name('download.csv');
+
+//search data
+Route::get('search',[BookingController::class,'search']);
 

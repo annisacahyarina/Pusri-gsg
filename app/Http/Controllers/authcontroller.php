@@ -9,11 +9,13 @@ use Illuminate\Support\Facades\Auth;
 
 class authcontroller extends Controller
 {
+    // TAMPILKAN VIEW LOGIN
     public function login()
     {
         return view('auth.login');
     }
 
+    //CEK LOGIN
     function loginPost(Request $request){
         $request->validate([
             "email" => "required",
@@ -26,11 +28,13 @@ class authcontroller extends Controller
         return redirect(route("login"))->with("error", "login failed");
     }
 
+    //TAMPILKAN VIEW REGISTER
     public function register()
     {
         return view('auth.register');
     }
 
+    //CEK REGISTER
     function registerPost(Request $request){
         $request->validate([
             "username" => "required",

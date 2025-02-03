@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="{{ asset('resources/css/styles.css') }}">
     <title>Pusri Grand Ballroom</title>
 
+    <!-- METADATA KONTAK-->
+    <meta name="author" content="Annisa Cahyarina">
+    <meta name="contact" content="annisacahyarina2004@gmail.com">
+    <meta name="phone" content="0878-9972-5978">
+
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -49,6 +55,7 @@
     .container {
         display: flex;
         justify-content: space-between;
+        gap: 12px;
         font-family: 'Montserrat', sans-serif;
         text-align: left;
 
@@ -112,13 +119,6 @@
         /* Zoom in ketika disentuh */
     }
 
-    .mapouter {
-        position: relative;
-        text-align: right;
-        padding: 2vw;
-        height: 100%;
-    }
-
     .gmap_canvas {
         overflow: hidden;
         background: none !important;
@@ -178,7 +178,8 @@
         }
 
         .gmap_canvas {
-            padding-bottom: 30vw
+            padding-bottom: 30vw;
+
         }
 
         .canvas,
@@ -213,13 +214,14 @@
             Pusri Grand Ballroom!</p>
     </div>
 
+    {{-- Bagian Fasilitas --}}
     <div class="container">
         <div class="image-card">
             <img src="asset/ruangfull.png" alt="kapasitas tamu">
             <div class="caption">Kapasitas 1200 tamu</div>
         </div>
         <div class="image-card">
-            <img src="asset/parkir.jpg" alt="parkir">
+            <img src="asset/parkirr.jpg" alt="parkir">
             <div class="caption">Parkir yang luas</div>
         </div>
         <div class="image-card">
@@ -228,6 +230,7 @@
         </div>
     </div>
 
+    {{-- Button Selengkapnya --}}
     <div class="container-btn">
         <a href="layanangedung" class="btn-selengkapnya" type="button">Selengkapnya</a>
     </div>
@@ -248,7 +251,8 @@
                     <p style="text-align: justify; line-height: 1.6; font-size: 1.1em; color: #333;">
                         Lihat jadwal gedung untuk memesan tanggal
                         terbaik—pastikan jadwal masih tersedia dan biarkan kami membantu mewujudkan momen pernikahan
-                        yang tak terlupakan. Dengan fasilitas lengkap dan ruang elegan yang mampu menampung hingga 1.200 tamu, setiap detail
+                        yang tak terlupakan. Dengan fasilitas lengkap dan ruang elegan yang mampu menampung hingga 1.200
+                        tamu, setiap detail
                         acara akan kami tangani dengan profesional.
                     </p>
                     <p style="font-size: 10pt">*Tanggal berwarna biru = Gedung sudah dibooking</p>
@@ -261,29 +265,25 @@
         </div>
     </div>
 
-
-
     <br>
-    <!-- Lokasi -->
+
+    <!-- Bagian Lokasi dan Video  -->
 
     <div class="description">
-        <h2 class="h2">LOKASI</h2>
+        <h3 style=" color: #6E5656; ">
+            "Discover the perfect venue for your events at Pusri Grand Ballroom"
+        </h3>
+
     </div>
     <div class="container">
-        <p
-            style="text-align:justify; margin-right: 2vw; transform: translateY(4vw);
-        transition: opacity 1s ease-out, transform 1s ease-out;">
-            Pusri Grand Ballroom merupakan pilihan yang tepat bagi kamu yang ingin mengadakan acara
-            pernikahan di kawasan Kalidoni, Pusri, dan sekitarnya. Dengan fasilitas yang memadai dan lokasi yang
-            strategis, gedung ini menawarkan kenyamanan bagi para tamu undangan. Suasana yang mendukung dan desain
-            ruangan yang fleksibel menjadikan Gedung Serbaguna Pusri sebagai venue yang ideal untuk acara
-            pernikahan, baik itu dengan skala besar maupun intim.</p>
-        <div class="mapouter">
-            <iframe class="gmap_iframe" width="450" height="300" frameborder="0" scrolling="no"
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nnt0STig1ek?si=1LGsgDYMrSpx5U74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="container-gmap">
+            <iframe class="gmap_iframe" width="560" height="315" frameborder="0" scrolling="no"
                 src="https://maps.google.com/maps?width=150&amp;height=200&amp;hl=en&amp;q=gedung serbaguna pusri&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
         </div>
     </div>
-
 
     <br>
 
@@ -307,6 +307,7 @@
 
         window.addEventListener('scroll', fadeInOnScroll);
     </script>
+
     @if (session('success'))
         <script>
             alert("{{ session('success') }}");

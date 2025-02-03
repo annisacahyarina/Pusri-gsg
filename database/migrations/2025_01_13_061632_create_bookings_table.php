@@ -12,14 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('address');
-            $table->string('email');
-            $table->string('phone');
-            $table->date('booking_date');
-            $table->string('booking_type');
-            $table->string('status')->default('Belum Approve');
+            $table->id(); //id
+            $table->string('name'); //nama penyewa
+            $table->string('address'); //alamat penyewa
+            $table->string('email'); //email penyewa
+            $table->string('phone'); //no. telpon penyewa
+            $table->date('booking_date'); //tanggal pemesanan
+            $table->string('booking_type'); //jenis pesanan (wo+gedung/gedung saja)
+            $table->string('status')->default('Belum Approve'); //status approve/belum approve
+            $table->string('image', 300); //bukti pembayaran
             $table->timestamps();
         });
     }

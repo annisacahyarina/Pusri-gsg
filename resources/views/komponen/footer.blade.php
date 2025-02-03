@@ -29,9 +29,9 @@
             font-size: 2vw;
             color: white
         }
-
     }
 </style>
+
 <div style="margin-top: 30px padding:5vw">
     <footer class="bg-dark text-white text-center text-lg-start">
         <!-- Grid container -->
@@ -64,7 +64,7 @@
                         <h5 class="text-uppercase">OUR CONTACT</h5>
                         <!-- Alamat -->
                         <p class="p-footer"><i class="fas fa-building" style="margin-right: 10px;"></i>
-                           Jl. Komp. Pusri, Sei Selayur, Kec. Kalidoni, Kota Palembang, Sumatera Selatan 30119, Indonesia</p>
+                           Jl. Komp. Pusri, Sei Selayur, Kec. Kalidoni, Palembang 30119 - INDONESIA</p>
 
                         <!-- Nomor Telepon -->
                         <p class="p-footer"><i class="fas fa-phone" style="margin-right: 10px;"></i>

@@ -19,6 +19,7 @@
         }
     }
 </style>
+
 <!-- Navbar -->
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
     <div class="container-fluid" style="margin: 8px">

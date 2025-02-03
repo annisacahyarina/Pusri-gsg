@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         body {
             background-image: url("asset/background2.jpg")
         }
+
         .form-container {
             background-color: white;
             padding: 30px;
@@ -18,19 +20,24 @@
             margin: 50px auto;
             max-width: 500px;
         }
+
         .btn-primary {
             background-color: black;
             border: none;
         }
+
         .btn-primary:hover {
             background-color: black;
         }
+
         .hidden {
             display: none;
         }
     </style>
 </head>
+
 <body>
+    {{-- FORM --}}
     <div class="container">
         <div class="form-container">
             <h2 class="text-center mb-4">Booking Form</h2>
@@ -38,11 +45,13 @@
                 @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Nama</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama">
+                    <input type="text" class="form-control" id="name" name="name"
+                        placeholder="Masukkan nama">
                 </div>
                 <div class="mb-3">
                     <label for="address" class="form-label">Alamat</label>
-                    <input type="text" class="form-control" id="address" name="address" placeholder="Masukkan alamat">
+                    <input type="text" class="form-control" id="address" name="address"
+                        placeholder="Masukkan alamat">
                 </div>
                 {{-- <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
@@ -50,7 +59,8 @@
                 </div> --}}
                 <div class="mb-3">
                     <label for="phone" class="form-label">No Telepon</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Masukkan no telepon">
+                    <input type="tel" class="form-control" id="phone" name="phone"
+                        placeholder="Masukkan no telpon">
                 </div>
                 <div class="mb-3">
                     <label for="booking_date" class="form-label">Tanggal Booking</label>
@@ -58,13 +68,14 @@
                 </div>
                 <div class="form-group">
                     <label for="booking_type">Nama Layanan:</label>
-                    <input type="text" class="form-control" id="booking_type" name="booking_type" value="{{ request('booking_type') }}" placeholder="Booking gedung/WO">
+                    <input type="text" class="form-control" id="booking_type" name="booking_type"
+                        value="{{ request('booking_type') }}" placeholder="Booking gedung/WO">
                 </div>
-
                 <div class="form-group">
                     <label for="price">Harga:</label>
                     <p style="font-size: 1vw">*harga belum termasuk ppn dan dapat berubah</p>
-                    <input type="text" class="form-control" id="price" name="price" value="{{ request('price') }}">
+                    <input type="text" class="form-control" id="price" name="price"
+                        value="{{ request('price') }}">
                 </div>
                 <div class="mb-3">
                     <label for="catatan" class="form-label">Catatan</label>
@@ -78,4 +89,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
