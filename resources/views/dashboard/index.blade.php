@@ -190,9 +190,9 @@
                                                 <th>Alamat</th>
                                                 <th>No. Telpon</th>
                                                 <th>Tanggal Booking</th>
-                                                <th>Jenis Pemesanan</th>
+                                                <th>Sewa Gedung</th>
                                                 <th>Harga</th>
-                                                <th>Catatan</th>
+                                                <th>Nama Layanan WO</th>
                                                 <th>Bukti Pembayaran</th>
                                                 <th>Waktu Pemesanan</th>
                                                 <th style="paddin:auto">Status</th>

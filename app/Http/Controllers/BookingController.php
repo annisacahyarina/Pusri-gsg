@@ -12,11 +12,16 @@ class BookingController extends Controller
     function add(Request $request){
 
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-
-        $imageName = time().'.'.$request->image->extension();
-        $request->image->move(public_path('images'), $imageName);
+        if ($request->hasFile('image')) {
+            // Jika gambar ada, proses file gambar
+            $imageName = time() . '.' . $request->file('image')->extension();
+            $request->file('image')->move(public_path('images'), $imageName);
+        } else {
+            // Jika tidak ada gambar, lakukan tindakan lain (opsional)
+            $imageName = null;
+        }
 
         $Booking = new Booking();
         $Booking->name= $request->name;
@@ -91,7 +96,14 @@ class BookingController extends Controller
         $req->validate([
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-
+        if ($request->hasFile('image')) {
+            // Jika gambar ada, proses file gambar
+            $imageName = time() . '.' . $request->file('image')->extension();
+            $request->file('image')->move(public_path('images'), $imageName);
+        } else {
+            // Jika tidak ada gambar, lakukan tindakan lain (opsional)
+            $imageName = null;
+        }
       $Booking=Booking::find($req->id);
       $Booking->name= $req->name;
         $Booking->address= $req->address;

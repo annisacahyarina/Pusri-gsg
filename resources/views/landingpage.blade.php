@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ asset('resources/css/styles.css') }}">
+    <link rel="icon" type="image/png" href="asset/pusri.png">
     <title>Pusri Grand Ballroom</title>
 
     <!-- METADATA KONTAK-->
@@ -271,13 +271,16 @@
 
     <div class="description">
         <h3 style=" color: #6E5656; ">
-            "Discover the perfect venue for your events at Pusri Grand Ballroom"
+            "Wujudkan acaramu di Pusri Grand Ballroom"
         </h3>
 
     </div>
     <div class="container">
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nnt0STig1ek?si=1LGsgDYMrSpx5U74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nnt0STig1ek?si=1LGsgDYMrSpx5U74"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="container-gmap">
             <iframe class="gmap_iframe" width="560" height="315" frameborder="0" scrolling="no"

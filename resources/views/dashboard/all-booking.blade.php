@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/png" href="asset/pusri.png">
     <title>Dashboard</title>
     <link rel="shortcut icon" type="image/x-icon" href="asset/img/favicon.png">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -132,7 +133,7 @@
                                                 <th>Alamat</th>
                                                 <th>No. Telpon</th>
                                                 <th>Tanggal Booking</th>
-                                                <th>Sewa gedung:</th>
+                                                <th>Sewa gedung</th>
                                                 <th>Harga</th>
                                                 <th>Nama Layanan WO</th>
                                                 <th>Bukti Pembayaran</th>
